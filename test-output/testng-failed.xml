@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="login(failed)">
+    <parameter name="mobileno" value="9025855549"/>
+    <classes>
+      <class name="com.goibibo.runnerclass">
+        <methods>
+          <include name="search"/>
+          <include name="lauchurl"/>
+          <include name="browserlaunch"/>
+        </methods>
+      </class> <!-- com.goibibo.runnerclass -->
+    </classes>
+  </test> <!-- login(failed) -->
+  <test thread-count="5" name="search(failed)">
+    <parameter name="from" value="MAA"/>
+    <parameter name="to" value="TRV"/>
+    <classes>
+      <class name="com.goibibo.runnerclass">
+        <methods>
+          <include name="lauchurl"/>
+          <include name="login"/>
+          <include name="browserlaunch"/>
+        </methods>
+      </class> <!-- com.goibibo.runnerclass -->
+    </classes>
+  </test> <!-- search(failed) -->
+</suite> <!-- Failed suite [Suite] -->
